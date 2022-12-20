@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Gotham__Pro";
+}
+
+.wrapper {
+  min-width: 320px;
+  max-width: 1310px;
+  padding: 0 10px;
+  margin: 0 auto;
+  outline: 1px solid lightblue;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #1B2D40;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 282px;
+  padding-bottom: 27px;
+}
+
+.nav-burger {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 100;
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+  border: none;
+  background-color: transparent;
+}
+.nav-burger__line {
+  display: block;
+  height: 4.5px;
+  margin: 4.5px 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.nav-burger::before {
+  display: block;
+  content: "";
+  height: 4.5px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.nav-burger::after {
+  display: block;
+  content: "";
+  height: 4.5px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  padding-top: 80px;
+  background-color: #1B2D40;
+}
+.nav-links__item {
+  margin: 0 auto 40px auto;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.nav-links__logo {
+  margin-bottom: 34px;
+}
+.nav-links__tel::before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+  background-image: url("../img/tel.svg");
+}
+
+.nav-langs {
+  display: flex;
+  justify-content: center;
+}
+.nav-langs__item {
+  position: relative;
+}
+.nav-langs__item:not(:last-child) {
+  margin-right: 15px;
+}
+.nav-langs__item:not(:last-child):after {
+  position: absolute;
+  top: 8px;
+  right: -8px;
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+.gotham {
+  font-family: "Gotham__Pro";
+  font-weight: 400;
+}
+
+.simple {
+  font-weight: 400;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}

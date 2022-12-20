@@ -1,0 +1,114 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  background-color: $dark;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 282px;
+  padding-bottom: 27px;
+  // background-color: $dark; 
+}
+
+.nav-burger {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 100;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 2px;
+
+  border: none;
+  background-color: transparent;
+
+  &__line {
+    display: block;
+    height: 4.5px;
+    margin: 4.5px 0;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    height: 4.5px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    height: 4.5px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+}
+
+.nav-links {
+
+  display: none;
+  flex-direction: column;
+  padding-top: 80px;
+  background-color: $dark;
+
+  &__item {
+    margin: 0 auto 40px auto;
+    color: #ffffff;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__logo {
+    margin-bottom: 34px;
+  }
+
+  &__tel::before {
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    background-image: url('../img/tel.svg');
+  }
+}
+
+.nav-langs {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    position: relative;
+  }
+
+
+
+  &__item:not(:last-child){
+    margin-right: 15px;
+    
+  }
+
+  &__item:not(:last-child):after {
+    position: absolute;
+    top: 8px;
+    right: -8px;
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #ffffff;
+  }
+}
