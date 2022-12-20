@@ -31,6 +31,7 @@ function watch_files() {
       }
   });
   gulp.watch("./src/scss/**/*.scss", css);
+  gulp.watch("./src/js/**/*.js", js);
   gulp.watch("./src/**/*.html", html).on("change", browserSync.reload);
   gulp.watch("./src/img/", image);
 }

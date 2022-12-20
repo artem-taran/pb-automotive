@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./css/fonts.css" />
   </head>
   <body>
-    <div class="wrapper">
+    
       <header class="main-header">
+        <div class="wrapper">
         <a href="#" class="logo">
           <img src="./img/mobile_logo.png" alt="logo" />
         </a>
@@ -49,7 +50,35 @@
             </div>
           </div>
         </nav>
+
+        <div class="contacts">
+          <p class="contacts__text">Обслуживание клиентов</p>
+          <a  href="tel:+37126858674" class="contacts__tel">+(371) 268 58 674</a>
+        </div>
+      </div>
       </header>
-    </div>
+
+      <div class="wrapper">
+        <section class="section cars-place">
+          <h2 class="section__title">Машины на месте</h2>
+          <p class="section__text">Все машины перед покупкой проверены нашими специалистами. На месте, машину можно поднять на подъёмнике у нас в сервисе.</p>
+
+          <div class="card-wrapper">
+            <a href="#" class="card">
+              <img src="./img/seat-1.jpg" alt="seat">
+              <div class="card__info-wrap">
+                <h3 class="card__name">Seat Leon FR</h3>
+                <p class="card__data">2013, 148 602 км,<br> 
+                  Автомат, 2.0 TDI, BP-016
+                </p>
+                <p class="card__price">9 900 EUR</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    
+
+    <script src="./js/burger.js"></script>
   </body>
 </html>

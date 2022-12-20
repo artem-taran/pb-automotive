@@ -70,15 +70,53 @@ body {
 .wrapper {
   min-width: 320px;
   max-width: 1310px;
-  padding: 0 10px;
+  padding: 0 20px;
   margin: 0 auto;
-  outline: 1px solid lightblue;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  width: 210px;
+  height: 278px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -1px 2px rgba(0, 0, 0, 0.05), 0px 16px 20px rgba(0, 0, 0, 0.06);
+}
+.card__img {
+  object-fit: cover;
+  width: 210px;
+  height: 170px;
+}
+.card__info-wrap {
+  padding: 6px 10px;
+}
+.card__name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+.card__data {
+  margin-top: 10px;
+  color: rgba(45, 45, 45, 0.6);
+  font-size: 14px;
+  line-height: 17px;
+}
+.card__price {
+  margin-top: 12px;
+  font-weight: 700;
+  color: #E62828;
 }
 
 .main-header {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   position: relative;
+  padding-bottom: 14px;
+  font-size: 14px;
+  color: #ffffff;
   background-color: #1B2D40;
 }
 
@@ -87,7 +125,7 @@ body {
   top: 0;
   right: 0;
   width: 282px;
-  padding-bottom: 27px;
+  z-index: 50;
 }
 
 .nav-burger {
@@ -100,6 +138,7 @@ body {
   padding: 2px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .nav-burger__line {
   display: block;
@@ -149,9 +188,15 @@ body {
   background-image: url("../img/tel.svg");
 }
 
+.visually-hidden {
+  display: flex;
+}
+
 .nav-langs {
   display: flex;
   justify-content: center;
+  padding-bottom: 27px;
+  background-color: #1B2D40;
 }
 .nav-langs__item {
   position: relative;
@@ -168,6 +213,69 @@ body {
   width: 1px;
   height: 20px;
   background-color: #ffffff;
+}
+
+.contacts {
+  text-align: center;
+  margin-top: 26px;
+  padding: 6px 0;
+  border-radius: 4px;
+  background-color: #223850;
+}
+.contacts__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 26px;
+  line-height: 16px;
+}
+.contacts__tel {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 16px;
+}
+.contacts__tel::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+  background-image: url("../img/tel.svg");
+}
+
+.section {
+  color: #2d2d2d;
+}
+.section__title {
+  position: relative;
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+}
+.section__title::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  content: "";
+  margin: 0 auto;
+  width: 100px;
+  height: 8px;
+  background-color: #E62828;
+}
+.section__text {
+  margin-top: 16px;
+  padding: 0 20px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.cars-place {
+  padding-top: 25px;
 }
 
 .gotham {
